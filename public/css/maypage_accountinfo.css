@@ -1,0 +1,222 @@
+@media screen and (min-width: 481px) {
+  .account-info-wrap {
+    min-height: calc(100vh - 20px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 90px
+  }
+  .account-info-wrap .account-info-left {
+    width: 20%;
+    min-width: 200px;
+    padding: 5px;
+  }
+  .account-info-wrap .account-info-left .account {
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+  }
+  .account-info-wrap .account-info-left .account-info {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-left .mail-config {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-left .order {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-left .resavation {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-left .address {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-left .logout {
+    margin: 5px 0;
+    font-size: .5em;
+  }
+  .account-info-wrap .account-info-center {
+    width: 60%;
+    min-width: 400px;
+    padding: 0 20px;
+  }
+  .account-info-wrap .account-info-center form {
+    width: 100%;
+    padding: 10px;
+  }
+  .account-info-wrap .account-info-center form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #313131;
+    outline: none;
+    margin: 5px 5px 15px 5px;
+    font-size: 15pt;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-info-wrap .account-info-center form label {
+    display: block;
+    font-size: .5em;
+    margin: 5px;
+  }
+  .account-info-wrap .account-info-center form span {
+    display: block;
+  }
+  .account-info-wrap .account-info-center form h4 {
+    font-weight: 500;
+  }
+  .account-info-wrap .account-info-center form h5 {
+    font-weight: 100;
+  }
+  .account-info-wrap .account-info-center form .center-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .account-info-wrap .account-info-center form .mepage-submit-button {
+    outline: none;
+    border: 1px solid black;
+    border-style: none;
+    background: black;
+    color: antiquewhite;
+    width: 30%;
+    margin: 40px auto 0 auto;
+    font-size: .5em;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  * {
+    margin: 0;
+  }
+  .account-info-left {
+    display: none;
+  }
+  .account-info-center {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .account-info-center form {
+    width: 100%;
+    padding: 10px;
+  }
+  .account-info-center form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #313131;
+    outline: none;
+    font-size: 15pt;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .account-info-center form label {
+    display: block;
+    font-size: .5em;
+    margin: 5px;
+  }
+  .account-info-center form span {
+    display: block;
+  }
+  .account-info-center form h4 {
+    font-weight: 500;
+  }
+  .account-info-center form h5 {
+    font-weight: 100;
+  }
+  .account-info-center form .center-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .account-info-center form .mepage-submit-button {
+    outline: none;
+    border: 1px solid black;
+    border-style: none;
+    background: black;
+    color: antiquewhite;
+    width: 30%;
+    margin: 40px auto 0 auto;
+    font-size: .5em;
+  }
+}
+span .error{
+  font-size:0.5em;
+}
+.error.reject {
+    color: #e44141;
+    font-weight: 900;
+    opacity: 0;
+    font-size:.5em;
+    -webkit-animation: 'reject' .2s ease-in 0s 1 normal forwards;
+            animation: 'reject' .2s ease-in 0s 1 normal forwards;
+  }
+  @-webkit-keyframes reject {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes reject {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .error.approval {
+    color: green;
+    font-weight: 900;
+    opacity: 0;
+    -webkit-animation: 'approval' .3s ease-in 0s 1 normal forwards;
+            animation: 'approval' .3s ease-in 0s 1 normal forwards;
+  }
+  @-webkit-keyframes approval {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes approval {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

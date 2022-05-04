@@ -1,0 +1,187 @@
+@media screen and (min-width:599px){
+.cart-menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    min-height: calc(100vh - 20px);
+    /*background:red; */
+    /*margin-top: 70px;*/
+}
+
+/*ここから追加*/
+
+
+/*ここまで*/
+
+.cart-menu-wrap .cart-left-menu {
+    max-width: 100%;
+    width: 100%;
+}
+
+.cart-menu-wrap .cart-left-menu .cart-title {
+    padding-left: 10px;
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list {
+    padding: 0 10px;
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid black;
+    /*height: 20px;*/
+    padding-bottom: 1px;
+    /*background:red;*/
+}
+
+/*tuika*/
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head #cart-head-left-left {
+    position: relative;
+    width: 40%;
+    font-size: .4em;
+    /*background: green;*/
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head #cart-head-left-right {
+    position: relative;
+    width: 15%;
+    /*background: blue;*/
+    font-size: .4em;
+    margin: 0;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head #cart-head-center {
+    position: relative;
+    width: 15%;
+    font-size: .4em;
+    /*background: green;*/
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head #cart-head-right-left {
+    position: relative;
+    width: 15%;
+    font-size: .4em;
+    /*background: green;*/
+}
+
+.cart-menu-wrap .cart-left-menu .cart-list .cart-list-head #cart-head-right-right {
+    position: relative;
+    width: 15%;
+    font-size: .4em;
+    /*background: green;*/
+}
+
+.item-wrap{
+    display: flex;
+    width: 100%;
+    border-bottom:1px solid black;
+    margin-top:6px;
+}
+
+.item-wrap .cart-item{
+    width: 40%;
+    margin-left:10px;
+    display:flex;
+}
+
+.item-wrap .cart-item .item-detail p{
+    margin-left:5px;
+    margin: 5px 10px;
+}
+
+
+.item-wrap .order-day{
+    width: 15%;
+    font-size:.5em;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.item-wrap .cart-sum{
+    width: 15%;
+    font-size:.5em;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.item-wrap .progress-status{
+    width: 15%;
+    font-size:.5em;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    padding:3px 0px;
+    /*justify-content:left;*/
+    /*align-items:center;*/
+}
+
+.item-wrap .progress-status div{
+    height:100%;
+}
+
+.item-wrap .change-item{
+    width: 15%;
+    font-size:.5em;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    text-align:center;
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+}
+
+/*
+レスポンシブ追加
+*/
+
+
+
+@media screen and (max-width:598px){
+    
+    
+/*debug*/
+/*body{*/
+/*    background:red;*/
+/*}*/
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+}
+/*test*/
+/*# sourceMappingURL=cartMenu.css.map */
