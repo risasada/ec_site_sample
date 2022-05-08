@@ -47,7 +47,7 @@
                 <a class="header-menu" href="/item/women's/none/none">Women's</a>
             </div>
             <div class="mono">
-                <a href="">EverythingElse</a>
+                <span>EverythingElse</span>
             </div>
             <div class="kensaku">
                 <span>search<span>
@@ -149,13 +149,13 @@
                 </div>
             </div>
             <div class="res-center-main-header">
-                <a hred="">
+                <a href="/">
                     LDERA
                 </a>
             </div>
             <div class="res-right-main-header">
                 <div class="res-reft-main-header-item1 res-item">
-                    <a href="">
+                    <a href="/account">
                         <img src="{{ asset('icon/person-lines-fill.svg') }}">
                     </a>
                 </div>
@@ -215,6 +215,26 @@
                             <a href = "/cart">ショッピングカート</a>
                         </button>
                     </li>
+                                        <li>
+                        <button class="res-btn">
+                            <a href = "/wish">ほしい物リスト</a>
+                        </button>
+                    </li>
+                                        <li>
+                        <button class="res-btn">
+                            <a href = "/account/order">注文履歴</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="res-btn">
+                            <a href = "/account/address">住所</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="res-btn">
+                            <a href = "/account/mailconfig">メール設定</a>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -268,7 +288,7 @@
                 <li><a href="">Accessibility</a></li>
             </ul>
         </div>
-        <p>© Practice. 2019.</p>
+        <blockquote>@ 2021 Carlin, inc.</blockquote>
     </footer>
 
 </body>

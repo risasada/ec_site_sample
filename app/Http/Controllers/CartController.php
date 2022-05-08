@@ -59,4 +59,82 @@ class CartController extends Controller
         return view('checkout', compact('all'));
     }
     
+    public function insert_cart(request $request){
+        
+        $data = $request->all();
+        $user_id = Auth::id();
+        if(isset($user_id)){
+
+            Cart::create(['user_id' => $user_id,
+            'item_id' => $data['item_id'],
+            'size' => $data['size']
+            ]);
+            
+            
+            return redirect()->route('cart');
+        }else{
+            return Auth::routes();
+        }
+    }
+    
+    
+     public function to_wish(request $request){
+        
+        $data = $request->all();
+        $user_id = Auth::id();
+        if(isset($user_id)){
+
+            Wish::create(['user_id' => $user_id,
+            'item_id' => $data['item_id'],
+            'size' => $data['size']
+            ]);
+            
+            Cart::where("id", $data['cart_id'])->delete();
+            
+            return redirect()->route('cart');
+            
+        }else{
+            return Auth::routes();
+        }
+
+    }
+    
+        
+    public function insert_wish(request $request){
+        
+        $data = $request->all();
+        $user_id = Auth::id();
+        if(isset($user_id)){
+
+            Wish::create(['user_id' => $user_id,
+            'item_id' => $data['item_id'],
+            'size' => $data['size']
+            ]);
+            return redirect()->route('wish');
+        }else{
+            return Auth::routes();
+        }
+
+    }
+
+
+    public function to_cart(request $request){
+        
+        $data = $request->all();
+        $user_id = Auth::id();
+        if(isset($user_id)){
+
+            Cart::create(['user_id' => $user_id,
+            'item_id' => $data['item_id'],
+            'size' => $data['size']
+            ]);
+            Wish::where("id", $data['wish_id'])->delete();
+            
+            return redirect()->route('wish');
+        }else{
+            return Auth::routes();
+        }
+    }
+
+    
 }

@@ -41,7 +41,7 @@ Route::get('/cart', [App\Http\Controllers\CartController::class, 'show_cart'])->
 
 Route::post('/cart/insert_wish', [App\Http\Controllers\HomeController::class, 'insert_wish']);
 
-Route::post('/cart/insert_cart', [App\Http\Controllers\ItemController::class, 'insert_cart']);
+Route::post('/cart/insert_cart', [App\Http\Controllers\CartController::class, 'insert_cart']);
 
 Route::post('/cart/to_wish', [App\Http\Controllers\ItemController::class, 'to_wish']);
 
@@ -55,9 +55,7 @@ Route::post('/cart/checkout', [App\Http\Controllers\PaymentController::class, 'c
 
 Route::get('/wish', [App\Http\Controllers\WishController::class, 'show_wish'])->name('wish');
 
-Route::post('/wish/insert_wish', [App\Http\Controllers\ItemController::class, 'insert_wish']);
-
-Route::post('/wish/insert_cart', [App\Http\Controllers\ItemController::class, 'insert_cart']);
+Route::post('/wish/insert_wish', [App\Http\Controllers\CartController::class, 'insert_wish']);
 
 Route::post('/wish/to_cart', [App\Http\Controllers\ItemController::class, 'to_cart']);
 

@@ -129,7 +129,7 @@ class ItemController extends Controller
             
             return redirect()->route('cart');
         }else{
-            return route('login');
+            return Auth::routes();
         }
     }
     
@@ -150,7 +150,7 @@ class ItemController extends Controller
             return redirect()->route('cart');
             
         }else{
-            return route('login');
+            return Auth::routes();
         }
 
     }
@@ -168,7 +168,7 @@ class ItemController extends Controller
             ]);
             return redirect()->route('wish');
         }else{
-            return route('login');
+            return Auth::routes();
         }
 
     }
@@ -188,7 +188,7 @@ class ItemController extends Controller
             
             return redirect()->route('wish');
         }else{
-            return route('login');
+            return Auth::routes();
         }
     }
 }
