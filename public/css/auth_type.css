@@ -1,3 +1,14 @@
-.container1{
-    padding-top: 100px;
+@media screen and (min-width:599px){
+
+    .container1{
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width:598px){
+   
+    .container1{
+        padding-top: 100px;
+    } 
 }
