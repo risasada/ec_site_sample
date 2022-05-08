@@ -21,6 +21,10 @@
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="{{ asset('img/Burberry_1.jpg') }}">
+    <link rel="icon" href="{{ asset('img/Burberry_1.jpg') }}">
+
 </head>
 
 <body>
