@@ -124,6 +124,7 @@ a {
     text-align: left;
     /*border-radius: 1px;*/
     position: relative;
+    padding-right: 5px;
 }
 
 .color-list .color-button::after {

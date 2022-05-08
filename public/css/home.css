@@ -399,6 +399,7 @@ a:hover {
     width: 95%;
     margin: 0 auto;
     padding-top: 60px;
+    overflow: hidden;
 }
 
 .collection4,
